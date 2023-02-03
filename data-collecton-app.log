@@ -1,0 +1,314 @@
+2023-02-02 22:06:58 [restartedMain] INFO  c.a.DataCollectionAppApplication - Starting DataCollectionAppApplication using Java 15.0.2 on LAPTOP-CNMHDCAV with PID 18936 (C:\Users\sneha\Documents\angularminiproj\DataCollectionApp\target\classes started by snehal in C:\Users\sneha\Documents\angularminiproj\DataCollectionApp)
+2023-02-02 22:06:58 [restartedMain] INFO  c.a.DataCollectionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:06:58 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\sneha\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/sneha/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-02-02 22:06:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 22:06:58 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 22:06:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 22:06:59 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 6 JPA repository interfaces.
+2023-02-02 22:07:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8055 (http)
+2023-02-02 22:07:00 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-02 22:07:00 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 22:07:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-02 22:07:00 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1730 ms
+2023-02-02 22:07:00 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 22:07:00 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 22:07:00 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 22:07:00 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-02-02 22:07:00 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-02-02 22:07:01 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-02-02 22:07:01 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2023-02-02 22:07:05 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 22:07:05 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:07:05 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 22:07:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-02-02 22:07:06 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8055 (http) with context path ''
+2023-02-02 22:07:06 [restartedMain] INFO  c.a.DataCollectionAppApplication - Started DataCollectionAppApplication in 8.117 seconds (JVM running for 8.952)
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  c.a.r.controller.DataCollectionRest -  createCase method start 
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  c.a.r.controller.DataCollectionRest -  createCase method called service class method createCase 
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService - createCase method start 
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService -  checkForCitizen method start 
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService -  citizen not present . checkForcitizen method end
+2023-02-02 22:07:09 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService - if block citizen not found 
+2023-02-02 22:07:09 [http-nio-8055-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.akashk.exception.CitizenNotFoundException: no ciziten found with id 33]
+2023-02-02 22:08:23 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-02-02 22:08:23 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-02-02 22:08:23 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 22:08:23 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:08:23 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-02-02 22:08:23 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-02-02 22:08:33 [restartedMain] INFO  c.a.DataCollectionAppApplication - Starting DataCollectionAppApplication using Java 15.0.2 on LAPTOP-CNMHDCAV with PID 3828 (C:\Users\sneha\Documents\angularminiproj\DataCollectionApp\target\classes started by snehal in C:\Users\sneha\Documents\angularminiproj\DataCollectionApp)
+2023-02-02 22:08:33 [restartedMain] INFO  c.a.DataCollectionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:08:33 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\sneha\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/sneha/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-02-02 22:08:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 22:08:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 22:08:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 22:08:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 77 ms. Found 6 JPA repository interfaces.
+2023-02-02 22:08:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8055 (http)
+2023-02-02 22:08:35 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-02 22:08:35 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 22:08:35 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-02 22:08:35 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1578 ms
+2023-02-02 22:08:35 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 22:08:35 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 22:08:35 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 22:08:35 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-02-02 22:08:35 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-02-02 22:08:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-02-02 22:08:36 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2023-02-02 22:08:39 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 22:08:39 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:08:40 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 22:08:40 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-02-02 22:08:40 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8055 (http) with context path ''
+2023-02-02 22:08:40 [restartedMain] INFO  c.a.DataCollectionAppApplication - Started DataCollectionAppApplication in 7.506 seconds (JVM running for 9.63)
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  c.a.r.controller.DataCollectionRest -  createCase method start 
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  c.a.r.controller.DataCollectionRest -  createCase method called service class method createCase 
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService - createCase method start 
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService -  checkForCitizen method start 
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService -  citizen not present . checkForcitizen method end
+2023-02-02 22:08:42 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService - if block citizen not found 
+2023-02-02 22:12:12 [restartedMain] INFO  c.a.DataCollectionAppApplication - Starting DataCollectionAppApplication using Java 15.0.2 on LAPTOP-CNMHDCAV with PID 24488 (C:\Users\sneha\Documents\angularminiproj\DataCollectionApp\target\classes started by snehal in C:\Users\sneha\Documents\angularminiproj\DataCollectionApp)
+2023-02-02 22:12:12 [restartedMain] INFO  c.a.DataCollectionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:12:12 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\sneha\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/sneha/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-02-02 22:12:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 22:12:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 22:12:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 22:12:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 6 JPA repository interfaces.
+2023-02-02 22:12:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8055 (http)
+2023-02-02 22:12:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-02 22:12:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 22:12:14 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-02 22:12:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1530 ms
+2023-02-02 22:12:14 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 22:12:14 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 22:12:14 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 22:12:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-02-02 22:12:14 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-02-02 22:12:15 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-02-02 22:12:15 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2023-02-02 22:12:18 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 22:12:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:12:19 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 22:12:19 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-02-02 22:12:19 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8055 (http) with context path ''
+2023-02-02 22:12:19 [restartedMain] INFO  c.a.DataCollectionAppApplication - Started DataCollectionAppApplication in 7.403 seconds (JVM running for 8.356)
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  c.a.r.controller.DataCollectionRest -  createCase method start 
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  c.a.r.controller.DataCollectionRest -  createCase method called service class method createCase 
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService - createCase method start 
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService -  checkForCitizen method start 
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService -  citizen not present . checkForcitizen method end
+2023-02-02 22:12:34 [http-nio-8055-exec-2] INFO  c.a.service.DataCollectionService - if block citizen not found 
+2023-02-02 22:12:34 [http-nio-8055-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.akashk.exception.CitizenNotFoundException: no ciziten found with id 33]
+2023-02-02 22:16:29 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-02-02 22:16:29 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-02-02 22:16:29 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 22:16:29 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:16:29 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-02-02 22:16:29 [RMI TCP Connection(6)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-02-02 22:30:06 [restartedMain] INFO  c.a.DataCollectionAppApplication - Starting DataCollectionAppApplication using Java 15.0.2 on LAPTOP-CNMHDCAV with PID 19048 (C:\Users\sneha\Documents\angularminiproj\DataCollectionApp\target\classes started by snehal in C:\Users\sneha\Documents\angularminiproj\DataCollectionApp)
+2023-02-02 22:30:06 [restartedMain] INFO  c.a.DataCollectionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:30:06 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\sneha\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/sneha/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-02-02 22:30:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 22:30:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 22:30:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 22:30:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 205 ms. Found 6 JPA repository interfaces.
+2023-02-02 22:30:08 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=45c4657e-cf02-3ebe-a536-cebb4280e516
+2023-02-02 22:30:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8055 (http)
+2023-02-02 22:30:09 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-02 22:30:09 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 22:30:09 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-02 22:30:09 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2966 ms
+2023-02-02 22:30:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 22:30:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 22:30:11 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 22:30:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-02-02 22:30:11 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-02-02 22:30:11 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-02-02 22:30:11 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2023-02-02 22:30:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 22:30:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:30:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 22:30:16 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-02-02 22:30:16 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-02-02 22:30:17 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-02-02 22:30:17 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-02-02 22:30:17 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-02-02 22:30:17 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-02-02 22:30:17 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1675357217744 with initial instances count: 1
+2023-02-02 22:30:17 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DATA-COLLECTON-APP with eureka with status UP
+2023-02-02 22:30:17 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1675357217754, current=UP, previous=STARTING]
+2023-02-02 22:30:17 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055: registering service...
+2023-02-02 22:30:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8055 (http) with context path ''
+2023-02-02 22:30:17 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8055
+2023-02-02 22:30:17 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055 - registration status: 204
+2023-02-02 22:30:17 [restartedMain] INFO  c.a.DataCollectionAppApplication - Started DataCollectionAppApplication in 12.268 seconds (JVM running for 13.393)
+2023-02-02 22:30:52 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 22:30:52 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-02 22:30:52 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DATA-COLLECTON-APP with eureka with status DOWN
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1675357372740, current=DOWN, previous=UP]
+2023-02-02 22:32:52 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055: registering service...
+2023-02-02 22:32:52 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055 - registration status: 204
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [pool-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+2023-02-02 22:32:52 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:32:53 [Thread-5] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-02-02 22:32:53 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-02-02 22:32:53 [RMI TCP Connection(8)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-02-02 22:32:53 [RMI TCP Connection(8)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-02-02 22:32:56 [RMI TCP Connection(8)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-02-02 22:32:56 [RMI TCP Connection(8)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055 - deregister  status: 200
+2023-02-02 22:32:56 [RMI TCP Connection(8)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2023-02-02 22:34:07 [restartedMain] INFO  c.a.DataCollectionAppApplication - Starting DataCollectionAppApplication using Java 15.0.2 on LAPTOP-CNMHDCAV with PID 24884 (C:\Users\sneha\Documents\angularminiproj\DataCollectionApp\target\classes started by snehal in C:\Users\sneha\Documents\angularminiproj\DataCollectionApp)
+2023-02-02 22:34:07 [restartedMain] INFO  c.a.DataCollectionAppApplication - No active profile set, falling back to 1 default profile: "default"
+2023-02-02 22:34:07 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\sneha\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/sneha/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2023-02-02 22:34:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-02-02 22:34:07 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-02-02 22:34:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-02 22:34:09 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 168 ms. Found 6 JPA repository interfaces.
+2023-02-02 22:34:09 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3845a2f0-fa89-326c-a092-48f5a19e5d8a
+2023-02-02 22:34:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8055 (http)
+2023-02-02 22:34:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-02-02 22:34:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-02-02 22:34:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-02-02 22:34:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3127 ms
+2023-02-02 22:34:12 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-02 22:34:12 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-02-02 22:34:12 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-02-02 22:34:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-02-02 22:34:12 [restartedMain] WARN  c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2023-02-02 22:34:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-02-02 22:34:12 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2023-02-02 22:34:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-02 22:34:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:34:16 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-02 22:34:17 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2023-02-02 22:34:17 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2023-02-02 22:34:17 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-02 22:34:17 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-02-02 22:34:17 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 18 endpoint(s) beneath base path '/actuator'
+2023-02-02 22:34:17 [RMI TCP Connection(3)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 33 ms
+2023-02-02 22:34:17 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-02-02 22:34:18 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2023-02-02 22:34:18 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2023-02-02 22:34:18 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1675357458342 with initial instances count: 2
+2023-02-02 22:34:18 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application DATA-COLLECTON-APP with eureka with status UP
+2023-02-02 22:34:18 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1675357458351, current=UP, previous=STARTING]
+2023-02-02 22:34:18 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055: registering service...
+2023-02-02 22:34:18 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8055 (http) with context path ''
+2023-02-02 22:34:18 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8055
+2023-02-02 22:34:18 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055 - registration status: 204
+2023-02-02 22:34:18 [restartedMain] INFO  c.a.DataCollectionAppApplication - Started DataCollectionAppApplication in 11.622 seconds (JVM running for 13.075)
+2023-02-02 22:34:18 [registrationTask1] INFO  d.c.b.a.c.r.ApplicationRegistrator - Application registered itself as c268bcbc1d86
+2023-02-02 22:35:00 [http-nio-8055-exec-7] INFO  c.a.r.controller.DataCollectionRest -  getCaseDetails method start 
+2023-02-02 22:35:00 [http-nio-8055-exec-7] INFO  c.a.service.DataCollectionService -  CaseDetails method start
+2023-02-02 22:35:00 [http-nio-8055-exec-7] INFO  c.a.service.DataCollectionService -  searchCase method start
+2023-02-02 22:35:00 [http-nio-8055-exec-7] INFO  c.a.service.DataCollectionService -   case  found . searchCase method ends 
+2023-02-02 22:35:00 [http-nio-8055-exec-7] INFO  c.a.service.DataCollectionService -  CaseDetails method ends
+2023-02-02 22:35:00 [http-nio-8055-exec-7] INFO  c.a.r.controller.DataCollectionRest -  getCaseDetails method ends 
+2023-02-02 22:35:11 [http-nio-8055-exec-8] INFO  c.a.r.controller.DataCollectionRest -  getCaseDetails method start 
+2023-02-02 22:35:11 [http-nio-8055-exec-8] INFO  c.a.service.DataCollectionService -  CaseDetails method start
+2023-02-02 22:35:11 [http-nio-8055-exec-8] INFO  c.a.service.DataCollectionService -  searchCase method start
+2023-02-02 22:35:11 [http-nio-8055-exec-8] INFO  c.a.service.DataCollectionService -   case  found . searchCase method ends 
+2023-02-02 22:35:11 [http-nio-8055-exec-8] INFO  c.a.service.DataCollectionService -  CaseDetails method ends
+2023-02-02 22:35:11 [http-nio-8055-exec-8] INFO  c.a.r.controller.DataCollectionRest -  getCaseDetails method ends 
+2023-02-02 22:35:50 [http-nio-8055-exec-1] INFO  c.a.r.controller.DataCollectionRest -  getCaseDetails method start 
+2023-02-02 22:35:50 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService -  CaseDetails method start
+2023-02-02 22:35:50 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService -  searchCase method start
+2023-02-02 22:35:50 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService -   case  found . searchCase method ends 
+2023-02-02 22:35:50 [http-nio-8055-exec-1] INFO  c.a.service.DataCollectionService -  CaseDetails method ends
+2023-02-02 22:35:50 [http-nio-8055-exec-1] INFO  c.a.r.controller.DataCollectionRest -  getCaseDetails method ends 
+2023-02-02 22:36:56 [http-nio-8055-exec-9] WARN  o.s.c.s.a.i.r.SleuthReactorProperties - You're using the deprecated [spring.sleuth.reactor.decorate-on-each] property. Please use the [spring.sleuth.reactor.instrumentation-type]
+2023-02-02 22:36:56 [http-nio-8055-exec-9] WARN  o.s.c.s.a.i.r.SleuthReactorProperties - You're using the deprecated [spring.sleuth.reactor.decorate-on-each] property. Please use the [spring.sleuth.reactor.instrumentation-type]
+2023-02-02 22:39:18 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application DATA-COLLECTON-APP with eureka with status DOWN
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1675357829865, current=DOWN, previous=UP]
+2023-02-02 22:40:29 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055: registering service...
+2023-02-02 22:40:29 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055 - registration status: 204
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [pool-1-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@15.0.2/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@15.0.2/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:505)
+ java.base@15.0.2/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3137)
+ java.base@15.0.2/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1614)
+ java.base@15.0.2/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1056)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1116)
+ java.base@15.0.2/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+ java.base@15.0.2/java.lang.Thread.run(Thread.java:832)
+2023-02-02 22:40:29 [RMI TCP Connection(11)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-02 22:40:30 [Thread-5] INFO  o.s.c.s.a.z.ZipkinAutoConfiguration - Flushing remaining spans on shutdown
+2023-02-02 22:40:30 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-02-02 22:40:30 [RMI TCP Connection(11)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-02-02 22:40:30 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2023-02-02 22:40:33 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Unregistering ...
+2023-02-02 22:40:33 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_DATA-COLLECTON-APP/host.docker.internal:Data-Collecton-App:8055 - deregister  status: 200
+2023-02-02 22:40:33 [RMI TCP Connection(11)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
