@@ -10,6 +10,8 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
@@ -36,6 +38,13 @@ public class CaseDetailsEntity implements Serializable{
 	private Integer caseId;
 	@Column(name = "plan_name")
 	private String planName;
+	
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	// one citizen can apply for only one plan 
+	@JoinColumn(name = "citizen_id",unique = true)
+	private CitizenEntity citizen;
+	
 	@OneToOne(mappedBy = "caseDetails",fetch = FetchType.LAZY)
 	//@JsonManagedReference
 	private EducationDetailsEntity educationDetails;
@@ -45,6 +54,10 @@ public class CaseDetailsEntity implements Serializable{
 	@OneToMany(mappedBy = "caseDetails", fetch = FetchType.LAZY)
 	//@JsonManagedReference
 	private Set<KidDetailsEntity> kidsDetails;
+	
+	
+	
+	
 	@CreationTimestamp
 	private LocalDate createdDate;
 	@UpdateTimestamp

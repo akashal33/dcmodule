@@ -1,5 +1,6 @@
 package com.akashk.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -35,6 +36,7 @@ public class DateCollectionServiceImpl implements DataCollectionService {
 
 	@Autowired
 	private CitizenRepository citizenRepository;
+
 	@Autowired
 	private CaseRepository caseRepo;
 	@Autowired
@@ -45,94 +47,86 @@ public class DateCollectionServiceImpl implements DataCollectionService {
 	private KidsRepository kidRepo;
 	@Autowired
 	private PlanRepository planRepo;
-	
+	// @Autowired
+	// private ApplicationRegistryFeignService applicationRegistryFeignService;
+
 	Logger logger = LoggerFactory.getLogger(DataCollectionService.class);
 
 	@Override
 	@Transactional(readOnly = false)
 	public Integer createCase(Integer citizenId, Integer caseworkerId) {
-		
-		 
-		
+
 		logger.info("createCase method start ");
-		
-		if (checkForCitizen(citizenId) == false) {
 
-			logger.info("if block citizen not found ");
-			
-			throw new CitizenNotFoundException("no ciziten found with id " + citizenId);
-
-		}
+		CitizenEntity citizen = checkForCitizen(citizenId);
 
 		CaseDetailsEntity caseDetails = new CaseDetailsEntity();
+		caseDetails.setCitizen(citizen);
 		caseDetails.setCreatedBy(caseworkerId);
 		caseDetails.setUpdatedBy(caseworkerId);
 		caseDetails = caseRepo.save(caseDetails);
 
 		if (caseDetails.getCaseId() == null) {
-			
+
 			logger.info(" if block casedetails not saved ");
-			
+
 			throw new FailedCaseException(" failed to create case ");
 
 		}
 
 		logger.info(" createCase method end ");
-		
+
 		return caseDetails.getCaseId();
 	}
 
+	
 	@Override
-	public boolean checkForCitizen(Integer citizenId) {
-		
-					
+	public CitizenEntity checkForCitizen(Integer citizenId) {
+
 		logger.info(" checkForCitizen method start ");
-		
+
 		Optional<CitizenEntity> citizen = citizenRepository.findById(citizenId);
 
-		if (citizen.isPresent()) {
-             logger.info(" if block citizen present . checkForcitizen method end");
-			return true;
+		if(citizen.isEmpty()) {
+			throw new CitizenNotFoundException("no ciziten found with id " + citizenId);
 		}
 		
-		 logger.info(" citizen not present . checkForcitizen method end");
-
-		return false;
+		return citizen.get();
+		
 	}
 
 	@Override
 	@Transactional(readOnly = true)
 	public List<String> getPlans() {
-		
-		 logger.info(" getplans method start");
-		
-		 List<String> plans = planRepo.findAll().stream().map(plan -> plan.getPlanName()).collect(Collectors.toList());
-		 
-		 logger.info(" getplans method end");
 
-		 return plans;
+		logger.info(" getplans method start");
+
+		List<String> plans = planRepo.findAll().stream().map(plan -> plan.getPlanName()).collect(Collectors.toList());
+
+		logger.info(" getplans method end");
+
+		return plans;
 	}
 
 	@Override
 	@Transactional(readOnly = false)
 	public String selectPlans(String planName, Integer caseId) {
-		
-		 logger.info(" selectPlans method start");
 
+		logger.info(" selectPlans method start");
 
 		CaseDetailsEntity caseDetails = searchCase(caseId);
 
 		caseDetails.setPlanName(planName);
 		caseRepo.save(caseDetails);
-		
+
 		logger.info(" selectPlans method end");
-		
+
 		return planName + " plan selected ";
 	}
 
 	@Override
 	public String saveEducationdetails(Integer caseId, EducationDetails educationDetails, Integer caseWorkerId) {
-		
+
 		logger.info(" saveEducationDetails method start");
 
 		CaseDetailsEntity caseDetails = searchCase(caseId);
@@ -142,15 +136,15 @@ public class DateCollectionServiceImpl implements DataCollectionService {
 		educationDetailsEntity.setUpdatedBy(caseWorkerId);
 		educationDetailsEntity.setCaseDetails(caseDetails);
 		educationRepo.save(educationDetailsEntity);
-		
+
 		logger.info(" saveEducationDetails method end");
-		
+
 		return " education details saved ";
 	}
 
 	@Override
 	public String saveIncomeDetails(Integer caseId, IncomeDetails incomeDetails, Integer caseWorkerId) {
-		
+
 		logger.info(" saveIncomeDetails method start");
 
 		CaseDetailsEntity caseDetails = searchCase(caseId);
@@ -159,73 +153,75 @@ public class DateCollectionServiceImpl implements DataCollectionService {
 		incomeDetailsEntity.setCreatedBy(caseWorkerId);
 		incomeDetailsEntity.setUpdatedBy(caseWorkerId);
 		incomeDetailsEntity.setCaseDetails(caseDetails);
-		
+
 		incomeRepo.save(incomeDetailsEntity);
 
 		logger.info(" saveIncomeDetails method end");
-		
+
 		return " income details saved ";
 	}
 
 	@Override
-	public String saveKidsDetails(Integer caseId, List<KidDetails> kidsDetails, Integer caseWorkerId) {
-		
+	public CaseDetails saveKidsDetails(Integer caseId, List<KidDetails> kidsDetails, Integer caseWorkerId) {
+
 		logger.info(" saveKidsDetails method start");
-	
+
 		CaseDetailsEntity caseDetails = searchCase(caseId);
-		
-		kidsDetails.stream().forEach(kidDetails->{
-			
+		List<KidDetailsEntity> kidsEntities = new ArrayList<>();
+		kidsDetails.stream().forEach(kidDetails -> {
+
 			KidDetailsEntity kidDetailsEntity = new KidDetailsEntity();
 			BeanUtils.copyProperties(kidDetails, kidDetailsEntity);
 			kidDetailsEntity.setCreatedBy(caseWorkerId);
 			kidDetailsEntity.setUpdatedBy(caseWorkerId);
 			kidDetailsEntity.setCaseDetails(caseDetails);
-			kidRepo.save(kidDetailsEntity);
-			
-		});
+			kidsEntities.add(kidDetailsEntity);
+			//kidRepo.save(kidDetailsEntity);
 
-		logger.info(" saveKidsDetails method end");
-		
-		return " kid details saved ";
-	}
+		});
+		kidRepo.saveAll(kidsEntities);
 	
+		logger.info(" saveKidsDetails method end");
+
+		return getCaseDetails(caseId);
+	}
+
 	@Override
 	public CaseDetails getCaseDetails(Integer caseId) {
-		
+
 		logger.info(" CaseDetails method start");
-		
+
 		CaseDetailsEntity caseDetailsEntity = searchCase(caseId);
 		System.out.println(caseDetailsEntity);
 		CaseDetails caseDetails = new CaseDetails();
-		
+
 		BeanUtils.copyProperties(caseDetailsEntity, caseDetails);
-		
+		caseDetails.setCitizenName(caseDetailsEntity.getCitizen().getFullName());
+		caseDetails.setCitizenSsn(caseDetailsEntity.getCitizen().getSsnNo());
 		logger.info(" CaseDetails method ends");
-		
+
 		return caseDetails;
-		
-		
+
 	}
 
 	public CaseDetailsEntity searchCase(Integer caseId) {
-		
+
 		logger.info(" searchCase method start");
-		
+
 		Optional<CaseDetailsEntity> caseDetails = caseRepo.findById(caseId);
 
 		if (caseDetails.isEmpty()) {
-			
+
 			logger.info(" if block . case not found . searchCase method ends ");
 
 			throw new CaseNotFoundException(" no case found with id " + caseId);
 
 		}
-		
+
 		logger.info("  case  found . searchCase method ends ");
-		
+
 		return caseDetails.get();
-		
+
 	}
 
 }

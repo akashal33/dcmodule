@@ -82,34 +82,35 @@ public class DataCollectionRest {
 	}
 	
 	@PostMapping("/kids/{caseId}/{caseWorkerId}")
-	public ResponseEntity<String> saveKidDetails(@PathVariable Integer caseId,@PathVariable Integer caseWorkerId,@RequestBody List<KidDetails> kidsDetails){
+	public ResponseEntity<CaseDetails> saveKidDetails(@PathVariable Integer caseId,@PathVariable Integer caseWorkerId,@RequestBody List<KidDetails> kidsDetails){
 		
 		logger.info(" saveKidDetails method start ");
 		
-		String kidsResponse = dataCollectionService.saveKidsDetails(caseId, kidsDetails, caseWorkerId);
+		CaseDetails caseDetails = dataCollectionService.saveKidsDetails(caseId, kidsDetails, caseWorkerId);
 		
 		logger.info(" saveKidDetails method ends ");
 		
-		return new ResponseEntity<>(kidsResponse,HttpStatus.OK);
+		return new ResponseEntity<>(caseDetails,HttpStatus.OK);
 		
 		
 	}
 	
 	
-	
-	@GetMapping("/get/{caseId}")
-	public ResponseEntity<CaseDetails> getCaseDetails(@PathVariable Integer caseId) {
-		
-		logger.info(" getCaseDetails method start ");
-		
-		CaseDetails caseDetails = dataCollectionService.getCaseDetails(caseId);
-		
-		logger.info(" getCaseDetails method ends ");
-		
-		return new ResponseEntity<CaseDetails>( caseDetails,HttpStatus.OK);
-		
-		 
-	}
+	/*
+	 * @GetMapping("/get/{caseId}") public ResponseEntity<CaseDetails>
+	 * getCaseDetails(@PathVariable Integer caseId) {
+	 * 
+	 * logger.info(" getCaseDetails method start ");
+	 * 
+	 * CaseDetails caseDetails = dataCollectionService.getCaseDetails(caseId);
+	 * 
+	 * logger.info(" getCaseDetails method ends ");
+	 * 
+	 * return new ResponseEntity<CaseDetails>( caseDetails,HttpStatus.OK);
+	 * 
+	 * 
+	 * }
+	 */
 	
 	
 }

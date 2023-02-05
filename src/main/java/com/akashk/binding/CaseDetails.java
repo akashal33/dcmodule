@@ -11,6 +11,8 @@ import lombok.Data;
 public class CaseDetails {
 
 	private String planName;
+	private String citizenName;
+	private String citizenSsn;
 	private EducationDetailsEntity educationDetails;
 	private IncomeDetailsEntity incomeDetails;
 	private Set<KidDetailsEntity> kidsDetails;
